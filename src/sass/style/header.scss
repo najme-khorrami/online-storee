@@ -1,0 +1,19 @@
+header{
+    .input-group{
+        input , button{
+            background-color: #F3F4F6;
+        }
+    }
+    .account{
+        transform: translateY(-6px);
+    }
+}
+nav{
+    .navigation .item{
+        background-color: #6366F1;
+        transition: .3s;
+        &:hover{
+            background-color: #3730A3;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+footer{
+    background-color: #F9FAFB;
+    .footer-list{
+        a{
+            color: $gray;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
