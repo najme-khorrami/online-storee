@@ -20,6 +20,7 @@ main{
     } 
     .price-box{
         background-color: #F3F4F6;
+        // min-width: 280px;
     }
     .owl-products-panel1,
     .owl-products-panel2,
@@ -44,4 +45,37 @@ main{
     .powerbank-box{
         background: linear-gradient(84.76deg, #F59E0B 0%, #92400E 100%);
     }
+    @include media-breakpoint-down(xl) {
+        .product{
+            > div ,
+            div:nth-child(3) > div{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .boxws{
+        max-width: 350px;
+        padding-bottom: 15px;
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 0;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .panels{
+            position: relative;
+            margin-bottom: 40px;
+            .row{
+                padding-top: 20px;
+            }
+            .more-button{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                top: 340px;
+            }
+            .more-fav{
+                top: 310px;
+            }
+        }
+    }    
 }
